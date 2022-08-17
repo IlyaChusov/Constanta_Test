@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/film_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    android:elevation="6dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@animator/card_state_list"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/film_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Фильм"
+            android:layout_marginBottom="5dp"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/film_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Режиссёр"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/film_actors"
+            android:layout_width="wrap_content"
+            tools:text="Актёрский состав:\nHeisenberg\nNacho\nChicken Man"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
